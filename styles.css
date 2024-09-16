@@ -3,6 +3,56 @@ body {
   background-color: #0b1828;
 }
 
+/* Custom Cursor Animation */
+* {
+  cursor: none !important; 
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+/* Cursor dot */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffa31a;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease;
+}
+
+/* Cursor ring */
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffa31a;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.15s ease, border-color 0.3s ease;
+  opacity: 0.75;
+}
+
+a:hover ~ .custom-cursor .cursor-dot,
+button:hover ~ .custom-cursor .cursor-dot {
+  transform: scale(1.5); 
+}
+
+a:hover ~ .custom-cursor .cursor-outline,
+button:hover ~ .custom-cursor .cursor-outline {
+  transform: scale(1.2); 
+  border-color: #52A3B6; 
+}
 p  {
   color: #ffa31a;
   font-family: 'Source Code Pro';
@@ -12,9 +62,10 @@ p  {
   margin-top: 35vh;
 }
 
-.highlight {
-  background-color: rgb(255, 163, 26, 0.75);
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
 }
 
 h1 {
@@ -417,7 +468,7 @@ transform 250ms ease;
 .p2 {
   color: #d0d6e2;
   position: absolute;
-  top: -27%;
+  top: -30%;
   left: 4%;
   font-size: 40px;
 }
@@ -425,8 +476,8 @@ transform 250ms ease;
 .p3 {
   color: #ffa31a;
   position: absolute;
-  top: -27%;
-  left: 8%;
+  top: -30%;
+  left: 7.5%;
   font-size: 40px;
 }
 
@@ -443,104 +494,6 @@ transform 250ms ease;
   width: 100%;
   height: 30%;
 
-}
-
-/* Buttonstyling */
-.btn {
-  top: 0;
-  left: 0;
-  transition: all 0.15s linear 0s;
-  position: relative;
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: #0b1828;
-  text-transform: uppercase;
-  color: white;
-  font-family: Arial, sans-serif;
-  letter-spacing: 1px;
-  box-shadow: -6px 6px 0 #ffa31a;
-  text-decoration: none;
-  border: none; 
-}
-.btn:hover {
-  top: 3px;
-  left: -3px;
-  box-shadow: -3px 3px 0 #ffa31a;
-}
-.btn:hover::after {
-  top: 1px;
-  left: -2px;
-  width: 4px;
-  height: 4px;
-}
-.btn:hover::before {
-  bottom: -2px;
-  right: 1px;
-  width: 4px;
-  height: 4px;
-}
-.btn::after {
-  transition: all 0.15s linear 0s;
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: -4px;
-  width: 8px;
-  height: 8px;
-  background-color: #ffa31a;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-.btn::before {
-  transition: all 0.15s linear 0s;
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  right: 2px;
-  width: 8px;
-  height: 8px;
-  background-color: clear;
-  transform: rotate(45deg);
-  z-index: -1;
-}
-a.btn {
-  position: relative;
-  border: none; /* Added to remove border */
-}
-a:active.btn {
-  top: 6px;
-  left: -6px;
-  box-shadow: none;
-}
-a:active.btn:before {
-  bottom: 1px;
-  right: 1px;
-}
-a:active.btn:after {
-  top: 1px;
-  left: 1px;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 30px;
-  margin: 10% 0 0 500px; /* Margin from the top and left */
-  position: absolute;
-  margin-top: -25%;
-}
-
-/* Responsive styling for buttons */
-@media (max-width: 768px) {
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    position: relative;
-    margin-top: 20px;
-    order: 3;
-  }
 }
 
 .shortprof {
@@ -903,4 +856,26 @@ a:active.btn:after {
   height: auto;
   position: relative;
   margin-left: 35%;
+}
+
+.ims-link {
+  text-decoration: dashed;
+  color: #ffa31a;
+}
+
+.socials {
+  color: #ffa31a;
+  padding-top: 1%;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  ;
+}
+
+.socials a {
+  margin: 0 10px;
+}
+
+.socials_logo {
+  width: 50px;
 }
