@@ -499,7 +499,7 @@ transform 250ms ease;
 .shortprof {
   width: 45%;
   margin-left: 15%;
-  margin-top: 250px;
+  position: relative;
   color: white;
   padding: 10px;
   border-inline: 2px solid #ffa31a;
@@ -786,7 +786,7 @@ a:active.btn:after {
   width: 200px;
   height: auto;
   margin-left: 65%;
-  margin-top: -19%;
+  margin-top: -22%;
   order: 2; /* Ensures image comes second */
 }
 
@@ -800,7 +800,7 @@ a:active.btn:after {
 }
 
 .profilepic {
-  width: 100%;
+  width: 150%;
   height: auto;
   display: block;
   border-radius: 10%;
@@ -810,31 +810,7 @@ a:active.btn:after {
   position: relative;
   width: 100%;
   height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #10233c; 
-  border-radius: 10%;
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.overlay .text {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-.profilepic-container:hover .overlay {
-  opacity: 1;
+  
 }
 
 /* Container for overall layout to control order on small screens */
@@ -869,7 +845,6 @@ a:active.btn:after {
   justify-content: center;
   display: flex;
   list-style: none;
-  ;
 }
 
 .socials a {
@@ -878,4 +853,12 @@ a:active.btn:after {
 
 .socials_logo {
   width: 50px;
+}
+
+/* Divider */
+hr.divider1 {
+  border: 5px solid #091320;
+  width: 75%;
+  margin: 10%;
+  
 }
