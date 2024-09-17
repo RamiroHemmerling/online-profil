@@ -9,4 +9,6 @@ Welcome to my personal online portfolio! This website is built with **HTML, CSS,
 - **Projects**: A showcase of my biggest projects, complete with descriptions, screenshots, and links to the code or live demos.
 - **Contact**: A simple and functional contact form for reaching out directly.
 
-Feel free to explore and get in touch!
+Feel free to explore and get in touch!$
+
+> blockquote
