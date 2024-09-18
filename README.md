@@ -1,4 +1,4 @@
-<img src="files/favicon.png" /> #Personal Portfolio ##asdas
+<img src="files/favicon.png" width="50" /> #Personal Portfolio 
 
 Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
 
