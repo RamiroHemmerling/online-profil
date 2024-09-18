@@ -1,4 +1,4 @@
-<img src="files/favicon.png" alt="Description" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;"> <h1 style="display: inline-block;">Personal Portfolio</h1>  
+# Personal Portfolio
 
 Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
 
@@ -12,5 +12,6 @@ Welcome to my personal online portfolio! This website is built with: <br>
 - **Contact**: A simple and functional contact form for reaching out directly.
 
 Feel free to explore and get in touch!
+<img src="files/favicon.png" alt="Description" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;"> 
 
 
