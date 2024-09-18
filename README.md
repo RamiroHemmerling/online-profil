@@ -1,4 +1,4 @@
-# Personal Portfolio
+<img src="files/favicon.png" /> # Personal Portfolio
 
 Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
 
