@@ -1,4 +1,5 @@
-<img src="files/favicon.png" width="50" /> #Personal Portfolio 
+<img src="files/favicon.png" style="border-radius: 50%" width="50" /> 
+# Personal Portfolio 
 
 Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
 
