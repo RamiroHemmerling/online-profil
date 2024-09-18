@@ -11,7 +11,7 @@ Welcome to my personal online portfolio! This website is built with: <br>
 - **Projects**: A showcase of my biggest projects, complete with descriptions, screenshots, and links to the code or live demos.
 - **Contact**: A simple and functional contact form for reaching out directly.
 
-Feel free to explore and get in touch!
+Feel free to explore and get in touch! <br>
 <img src="files/favicon.png" alt="Description" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;"> 
 
 
