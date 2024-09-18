@@ -1,6 +1,4 @@
-<h1 style="display: inline-block;">Personal Portfolio</h1> / <img src="files/favicon.png" alt="Description" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;">
-
-
+<img src="files/favicon.png" alt="Description" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;"> <h1 style="display: inline-block;">Personal Portfolio</h1>  
 
 Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
 
