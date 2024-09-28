@@ -941,3 +941,52 @@ hr.divider1 {
   margin-top: 10px;
 }
 
+/* Skills */
+.techstack {
+    padding: 40px 0;
+    background-color: transparent;
+    color: #ADD8E6;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ADD8E6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-logo-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.skill-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.skill-logo-wrapper:hover .overlay {
+    opacity: 0; /* Overlay wird beim Hover unsichtbar */
+}
+
+.skill p {
+    color: #ADD8E6;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
