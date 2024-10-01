@@ -31,4 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     animateCursor(); 
+
 });
+
+// Project Expand
+function expand(element) {
+    element.classList.toggle('expanded');
+  }

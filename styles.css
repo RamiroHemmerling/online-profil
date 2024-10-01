@@ -121,8 +121,6 @@ h3 {
   margin-top: 3vh;
   margin-bottom: 3vh;
   line-height: 1;
-  background-color: #ffa31a;
-
 }
 
 .p1 {
@@ -572,71 +570,73 @@ transform 250ms ease;
 }
 
 /* Project Container */
-
-.projects {
+.project-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
 }
 
 .project {
-  flex-direction: column;
-  background-color: #10233c;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  box-sizing: border-box;
-  transition: transform 0.2s;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-}
-
-.projecttitle {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #ffa31a;
+  cursor: pointer;
+  display: flex;
+  background-color: #0b1828;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .project img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h3 {
+  margin: 0;
+  color: #ffa31a;
+}
+
+.project-info p, .project-info a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.project-info a {
+  color: #4e9af1;
+  text-decoration: none;
+}
+
+.project.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 1000;
+}
+
+.project.expanded img {
+  width: 40%;
   height: auto;
-  display: block;
-  margin-bottom: 10px; /* Ensures minimal space between image and text */
+  margin-bottom: 20px;
 }
 
-.project p {
-  font-size: 1em;
-  margin: 0; /* Remove bottom margin */
-  color: white;
+.project.expanded .project-info {
+  width: 40%;
+  text-align: left;
 }
 
-.project a {
-  display: inline-block;
-  margin-top: 10px; /* Ensures minimal space between text and link */
-}
-
-.project a img {  
-  width: 24px;
-  height: 24px;
-  transition: opacity 0.2s;
-}
-
-.project a img:hover {
-  opacity: 0.7;
-}
-
-.project a img {
-  margin-top: -10px;
-  width: 40px;
-  height: 40px;
-  transition: opacity 0.2s;
-  
-}
 
 /* Skills Container */
 .skills {
