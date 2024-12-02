@@ -990,3 +990,29 @@ hr.divider1 {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+
+/* Tech and Tool Stack */
+section {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stack-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.stack-item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
