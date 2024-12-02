@@ -1,6 +1,9 @@
 # Personal Portfolio
+### _________________________________________________________
+### Currently offline due to the development of new features
+### _________________________________________________________
 
-Visit the portfolio at: [Link will Follow](https://www.github.com/RamiroHemmerling/online-profil)! 
+Visit the portfolio at: www.ramirodakota.ch
 
 Welcome to my personal online portfolio! This website is built with: <br>
 
